@@ -27,7 +27,13 @@ int enterDigit(const string& label) {
 }
 
 int getHours() {
-    
+    while (true) {
+        int hours = enterDigit("Введите часы (0-23): ");
+        if (hours >= 0 && hours <= 23) {
+            return hours;
+        }
+        cout << "Часы должны быть от 0 до 23!" << endl;
+    }
 }
 
 int getMinutes() {
