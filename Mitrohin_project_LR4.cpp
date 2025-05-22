@@ -31,7 +31,13 @@ int getHours() {
 }
 
 int getMinutes() {
-    
+    while (true) {
+        int minutes = enterDigit("Введите минуты (0-59): ");
+        if (minutes >= 0 && minutes <= 59) {
+            return minutes;
+        }
+        cout << "Минуты должны быть от 0 до 59!" << endl;
+    }
 }
 
 int toTotalMinutes(int hours, int minutes) {
