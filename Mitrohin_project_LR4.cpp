@@ -51,7 +51,8 @@ int toTotalMinutes(int hours, int minutes) {
 }
 
 int timeDifference(int totalMinutes) {
-    
+     int referenceTime = 12 * 60;
+    return abs(totalMinutes - referenceTime);
 }
 
 int main() {
