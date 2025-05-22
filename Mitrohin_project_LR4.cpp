@@ -47,7 +47,7 @@ int getMinutes() {
 }
 
 int toTotalMinutes(int hours, int minutes) {
-    
+    return hours * 60 + minutes;
 }
 
 int timeDifference(int totalMinutes) {
